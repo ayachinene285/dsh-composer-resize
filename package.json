@@ -1,0 +1,34 @@
+{
+  "name": "dsh-composer-resize",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：聊天输入框可自由拖动调整高度，并限制默认最大高度 · Resizable composer height for DSH",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "composer",
+    "resize",
+    "textarea"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

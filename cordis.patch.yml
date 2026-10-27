@@ -1,0 +1,4 @@
+# dsh-composer-resize：只插入本插件入口。
+- insert:
+    - id: dsh-composer-resize
+      name: 'dsh-composer-resize'
